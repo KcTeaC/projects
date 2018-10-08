@@ -1,0 +1,70 @@
+xscreensaver.Dialog.headingFont:                -*-terminus-bold-r-*--12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:                   -*-terminus-medium-r-*-*12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:                  -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:                  -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:                   -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:                 -*-terminus-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.passwdFont:                 -*-terminus-bold-r-*-*-12-*-*-*-*-*-*-*
+
+xscreensaver.splash:                            false
+
+xscreensaver.Dialog.text.foreground:            #666666
+xscreensaver.Dialog.text.background:            #ffffff
+xscreensaver.Dialog.internalBorderWidth:        24
+xscreensaver.Dialog.borderWidth:                20
+xscreensaver.Dialog.shadowThickness:            2
+
+xscreensaver.Dialog.foreground:                 #ffffff
+xscreensaver.Dialog.background:                 #111111
+xscreensaver.Dialog.topShadowColor:             #111111
+xscreensaver.Dialog.bottomShadowColor:          #111111
+xscreensaver.Dialog.Button.foreground:          #666666
+xscreensaver.Dialog.Button.background:          #ffffff
+
+xscreensaver.passwd.thermometer.foreground:     #ff0000
+xscreensaver.passwd.thermometer.background:     #000000
+xscreensaver.passwd.thermometer.width:          8
+
+xscreensaver.dateFormat:                        %Y, %b %d %H:%M:%S
+
+!!!!! Xft !!!!!
+Xft.dpi:        96
+
+!!!!! Fonts !!!!!
+URxvt*font:     xft:Iosevka Term:style=medium:size=11
+
+!!!!! URxvt settings !!!!!
+URxvt*termName:         screen-256color
+URxvt*loginShell:       true
+URxvt*letterSpace:      -1
+URxvt*lineSpace:        0
+URxvt*internalBorder:   0
+URxvt*geometry:         80x50
+URxvt*depth:            32
+URxvt*background:       black
+URxvt*foreground:       white
+URxvt*cursorColor:      magenta
+URxvt*cursorBlink:      true
+
+URxvt*saveLines:        4096
+URxvt*scrollBar:        false
+URxvt*scrollStyle:      rxvt
+URxvt*scrollTtyOutput:  false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress:true
+
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
+URxvt.urlLauncher:      xdg-open
+URxvt.underlineURLs:    True
+
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+
+!!!!! Keys !!!!!
+URxvt.keysym.M-c:       perl:clipboard:copy
+URxvt.keysym.M-v:       perl:clipboard:paste
+URxvt.keysym.M-C-v:     perl:clipboard:paste-escaped
+URxvt.keysym.M-Escape:  perl:keyboard-select:activate
+URxvt.keysym.C-Escape:  perl:keyboard-select:activate
+URxvt.keysym.M-u:       perl:url-select:select_next
+
